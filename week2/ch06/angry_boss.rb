@@ -1,4 +1,4 @@
-puts "Hey boss. Sorry for interrupting, but I need to ask you something?"
+puts "Hey boss. Sorry for interrupting, but I need to ask you something."
 $stdout.flush
 asks = gets.chomp.capitalize
 puts "WHAT DO YOU MEAN, \"" + asks.upcase + "\"?!? ARE YOU CRAZY!!!"

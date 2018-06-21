@@ -1,5 +1,5 @@
  #Array of table of contents, including title
-   toc = ['Table of Contents', 'Chapter 1: Getting Started', 'page 1' , 'Chapter 2: Numbers', 'page 9', 'Chapter 3: Letters', 'page 13']
+   toc = ['Table of Contents', 'Chapter 1: Getting Started', 'page  1' , 'Chapter 2: Numbers', 'page  9', 'Chapter 3: Letters', 'page 13']
  #Set page width
    page_width = 60
  #Set Title. Its at 0 because arrays start at 0

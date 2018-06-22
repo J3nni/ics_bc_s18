@@ -5,7 +5,7 @@ puts "Ready..."
 puts "Go"
 $stdout.flush
 responses = []
-entry "0"
+entry = "0"
 while entry != ''
   entry = gets.chomp
   responses.push entry

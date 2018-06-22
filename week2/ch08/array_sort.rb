@@ -4,7 +4,7 @@ puts "Press enter on an empty line when your done"
 puts "Ready..."
 puts "Go"
 $stdout.flush
-word = "word"
+word = "x"
 words = []
 while word != ''
   words = gets.chomp

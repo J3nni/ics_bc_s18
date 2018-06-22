@@ -1,24 +1,20 @@
 puts "Say something nice to Grandma."
 puts " "
 puts "Hey Sonny! It\'s your Grandma! How are you?"
-bye = 0
-begin
-  print "> "
+puts 'Grandma: Hello, its\'s been while since you visit me. Come here and talk to Grandma.'
+bye  = 0
+while bye != 3
   $stdout.flush
-  reply = gets.chomp
-  if reply == 'BYE'
-    byes += 1
-    case bye
-    1; puts "CAN'T HEAR YOU, DEAR!"
-    2; puts "STILL CAN'T HEAR YOU, SONNY!"
-    else ; puts "OKAY, BYE!"
-    end
+  respond = gets.chomp
+  if respond == 'BYE'
+    bye = bye + 1
   else
     bye = 0
-    if reply == reply.upcase
-      puts "NO, NOT SINCE " + (1930 + rand(21)).to_s + "!"
+    if respond == respond.upcase
+      puts 'NO, NOT SINCE '+(rand(20)+1930).to_s+' !'
     else
-      puts "EHH?? WHAT\'S THAT??"
+      puts 'HUH?!  SPEAK UP, SONNY!'
     end
   end
-end until byes >= 3
+end
+puts 'See you again SONNY!'

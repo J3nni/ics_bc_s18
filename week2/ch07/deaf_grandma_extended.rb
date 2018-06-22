@@ -14,7 +14,7 @@ while bye < 3
         puts "NO, NOT SINCE " + (1930 + rand(21)).to_s + "!"
     end
 end
-while bye = 3
+while bye == 3
     puts "BYE BYE, SONNY!"
     break
 end

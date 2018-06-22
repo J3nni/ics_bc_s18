@@ -5,13 +5,11 @@ puts "Ready..."
 puts "Go"
 $stdout.flush
 responses = []
-response = gets.chomp
-while response != ''
-  responses.push response
-  response = gets.chomp
+entry "0"
+while entry != ''
+  entry = gets.chomp
+  responses.push entry
 end
+puts "Thanks for your input. Sorting data..."
+puts "Your values sorted:"
 puts responses.sort
-puts 'Your original values:'
-puts response
-puts 'Your values sorted:'
-puts response.sort

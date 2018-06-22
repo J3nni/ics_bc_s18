@@ -11,7 +11,7 @@ if reply == "BYE"
   else;   puts "PLEASE VISIT ME AGAIN!"
           puts "COME BACK SOON HONEY!"
           puts "GOOD BYE, SONNY!"
-          puts "TAKE CARE!"]
+          puts "TAKE CARE!"
   end
 else
   bye = 0

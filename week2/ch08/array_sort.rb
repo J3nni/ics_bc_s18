@@ -1,9 +1,14 @@
-puts "Type a word, then press Enter."
-puts "When you\'re finished adding words, hit ENTER on a blank line."
+puts "I'll sort some words for you"
+puts "Just type one word per line"
+puts "Press enter on an empty line when your done"
+puts "Ready..."
+puts "Go"
 $stdout.flush
-myarray = []
-answer = gets.chomp
-while answer != ''
-  myarray.push answer
-  answer = gets.chomp
+words = []
+while true
+  reply = gets.chomp.downcase
+  break if reply == ''
+  words << reply
+  words.sort
 end
+puts words.join(', ')

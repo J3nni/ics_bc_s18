@@ -11,10 +11,10 @@ while bye < 3
         bye += 1
     end
     $stdout.flush
-    if tell_grandma != tell_grandma.upcase
-        puts "HUH!? I CAN\'T HEAR YOU! SPEAK UP, SONNY!"
+    if tell_grandma == tell_grandma.upcase
+      puts "NO, NOT SINCE " + (1930 + rand(21)).to_s + "!"
     else
-        puts "NO, NOT SINCE " + (1930 + rand(21)).to_s + "!"
+        puts "HUH!? I CAN\'T HEAR YOU! SPEAK UP, SONNY!"
     end
     $stdout.flush
 end

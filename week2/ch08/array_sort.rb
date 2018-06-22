@@ -4,13 +4,16 @@ puts "Press enter on an empty line when your done"
 puts "Ready..."
 puts "Go"
 $stdout.flush
+word = "word"
 words = []
-while true
+while word != ''
   words = gets.chomp
-  if words == ''
-    break
-  end
-  words << words
+  words = words.push word
 end
-puts 'Sweet! Here they are, sorted:'
+puts ''
+puts 'Your original values:'
+puts words
+puts ''
+puts 'Your values sorted:'
 puts words.sort
+puts ''

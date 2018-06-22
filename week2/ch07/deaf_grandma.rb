@@ -19,4 +19,4 @@ if reply = reply.upcase
     puts "EHH?? WHAT\'S THAT??"
     puts "Huh?! I CAN\'T HEAR YOU!"
   end
-end bye >= 3
+end when bye >= 3

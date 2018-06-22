@@ -2,20 +2,24 @@ puts "Say something nice to Grandma."
 puts " "
 puts "Hey Sonny! It\'s your Grandma! How are you?"
 bye = 0
-while bye < 3
-  response = gets.chomp
-  if response != response.upcase
-    puts "Huh?! I CAN\'T HEAR YOU!"
-    puts "SPEAK UP, SWEETIE"
-  else
-    puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
-  end
-  if response == "BYE"
-    puts "STAY AWHILE!?!"
-    bye = (bye+1)
-  end
-end
-puts "PLEASE VISIT ME AGAIN!"
-puts "COME BACK SOON HONEY!"
-puts "GOOD BYE, SONNY!"
-puts "TAKE CARE!"
+reply = gets.chomp
+if reply == "BYE"
+  bye += 1
+  when 1; puts "CAN\'T HEAR YOU, DEAR!"
+          puts "SPEAK UP, SWEETIE"
+  when 2; puts "STAY AWHILE!?!"
+  else; puts "PLEASE VISIT ME AGAIN!"
+        puts "COME BACK SOON HONEY!"
+        puts "GOOD BYE, SONNY!"
+        puts "TAKE CARE!"
+      end
+    else
+      bye = 0
+      if reply = reply.upcase
+        puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
+      else
+        puts "EHH?? WHAT\'S THAT??"
+        puts "Huh?! I CAN\'T HEAR YOU!"
+      end
+    end
+  end until bye >= 3

@@ -8,10 +8,10 @@ if reply == "BYE"
   when 1; puts "CAN\'T HEAR YOU, DEAR!"
           puts "SPEAK UP, SWEETIE"
   when 2; puts "STAY AWHILE!?!"
-  else; puts "PLEASE VISIT ME AGAIN!"
-        puts "COME BACK SOON HONEY!"
-        puts "GOOD BYE, SONNY!"
-        puts "TAKE CARE!"
+  else;   puts "PLEASE VISIT ME AGAIN!"
+          puts "COME BACK SOON HONEY!"
+          puts "GOOD BYE, SONNY!"
+          puts "TAKE CARE!"
       end
     else
       bye = 0

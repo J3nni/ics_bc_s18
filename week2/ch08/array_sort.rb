@@ -8,7 +8,7 @@ word = "word"
 words = []
 while word != ''
   words = gets.chomp
-  words = words.push word
+  words.push word
 end
 puts ''
 puts 'Your original values:'

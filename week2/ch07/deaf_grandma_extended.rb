@@ -4,6 +4,7 @@ puts "Hey Sonny! It\'s your Grandma! How are you?"
 bye = 0
 while bye < 3
     puts "What do you want to say to Grandma?"
+    $stdout.flush
     tell_grandma = gets.chomp
     if tell_grandma == "BYE"
         bye += 1

@@ -12,14 +12,14 @@ if reply == "BYE"
           puts "COME BACK SOON HONEY!"
           puts "GOOD BYE, SONNY!"
           puts "TAKE CARE!"
-      end
+  end
+else
+  bye = 0
+  if reply = reply.upcase
+    puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
     else
-      bye = 0
-      if reply = reply.upcase
-        puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
-      else
-        puts "EHH?? WHAT\'S THAT??"
-        puts "Huh?! I CAN\'T HEAR YOU!"
-      end
+      puts "EHH?? WHAT\'S THAT??"
+      puts "Huh?! I CAN\'T HEAR YOU!"
     end
-  end until bye >= 3
+  end
+end until bye >= 3

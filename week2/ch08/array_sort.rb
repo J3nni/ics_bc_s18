@@ -11,10 +11,7 @@ while response != ''
   response = gets.chomp
 end
 puts responses.sort
-puts ''
 puts 'Your original values:'
 puts + response +
-puts ''
 puts 'Your values sorted:'
 puts + response.sort +
-puts ''

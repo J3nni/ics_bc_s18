@@ -12,7 +12,7 @@ if endyear < beginyear
 else
         while (beginyear <= endyear)
                 if
-                  (((beginyear %4 == 0) && (beginyear %100 !=0)) || + (beginyear %400 == 0))
+                  (((beginyear %4 == 0) && (beginyear %100 !=0)) + (beginyear %400 == 0))
        puts beginyear.to_s + "is a leap year"
      end
      (beginyear = beginyear.to_i + 1)

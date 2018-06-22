@@ -10,7 +10,7 @@ while true
   if words == ''
     break
   end
-  words.push word
+  words.push words
 end
 puts 'Sweet! Here they are, sorted:'
 puts words.sort

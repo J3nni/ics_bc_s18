@@ -10,7 +10,7 @@ while true
   if words == ''
     break
   end
-  words << words
+  words << word
 end
 puts 'Sweet! Here they are, sorted:'
 puts words.sort

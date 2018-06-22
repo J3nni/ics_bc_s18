@@ -7,7 +7,9 @@ if reply == "BYE"
   bye += 1
   when 1; puts "CAN\'T HEAR YOU, DEAR!"
           puts "SPEAK UP, SWEETIE"
+  end
   when 2; puts "STAY AWHILE!?!"
+  end
   else;   puts "PLEASE VISIT ME AGAIN!"
           puts "COME BACK SOON HONEY!"
           puts "GOOD BYE, SONNY!"

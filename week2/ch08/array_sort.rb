@@ -6,9 +6,11 @@ puts "Go"
 $stdout.flush
 words = []
 while true
-  reply = gets.chomp.downcase
-  break if reply == ''
-  words << reply
-  words.sort
+  words = gets.chomp
+  if word == ''
+    break
+  end
+  words.push word
 end
-puts words.join(', ')
+puts 'Sweet! Here they are, sorted:'
+puts words.sort

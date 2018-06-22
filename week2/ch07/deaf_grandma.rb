@@ -10,8 +10,7 @@ while bye < 3
   else
     puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
   end
-elsif
-   response == "BYE"
+  if response == "BYE"
     puts "STAY AWHILE!?!"
     bye = (bye+1)
   end

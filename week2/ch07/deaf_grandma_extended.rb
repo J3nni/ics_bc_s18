@@ -8,6 +8,7 @@ while bye != 3
   respond = gets.chomp
   if respond == 'BYE'
     bye = bye + 1
+    puts "HUH!? I CAN\'T HEAR YOU!"
   else
     bye = 0
     if respond == respond.upcase

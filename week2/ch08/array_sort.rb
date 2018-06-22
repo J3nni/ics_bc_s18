@@ -7,7 +7,7 @@ $stdout.flush
 words = []
 while true
   words = gets.chomp
-  if word == ''
+  if words == ''
     break
   end
   words.push word

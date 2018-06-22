@@ -15,6 +15,7 @@ if reply == "BYE"
           puts "GOOD BYE, SONNY!"
           puts "TAKE CARE!"]
   end
+end
 else
   bye = 0
   if reply = reply.upcase

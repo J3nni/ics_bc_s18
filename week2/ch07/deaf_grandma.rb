@@ -5,9 +5,9 @@ bye = 0
 reply = gets.chomp
 if reply == "BYE"
   bye += 1
-  end_of_input when 1; puts "CAN\'T HEAR YOU, DEAR!"
+  1; puts "CAN\'T HEAR YOU, DEAR!"
           puts "SPEAK UP, SWEETIE"
-  end_of_input when 2; puts "STAY AWHILE!?!"
+  2; puts "STAY AWHILE!?!"
   else;   puts "PLEASE VISIT ME AGAIN!"
           puts "COME BACK SOON HONEY!"
           puts "GOOD BYE, SONNY!"

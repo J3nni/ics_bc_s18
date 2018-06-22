@@ -2,20 +2,23 @@ puts "Say something nice to Grandma."
 puts " "
 puts "Hey Sonny! It\'s your Grandma! How are you?"
 bye = 0
-reply = gets.chomp
-if reply == "BYE"
-  bye += 1
-  1; puts "CAN\'T HEAR YOU, DEAR!"
-          puts "SPEAK UP, SWEETIE"
-  2; puts "STAY AWHILE!?!"
-  else;   puts "PLEASE VISIT ME AGAIN!"
-          puts "COME BACK SOON HONEY!"
-          puts "GOOD BYE, SONNY!"
-          puts "TAKE CARE!"
-  end
-if reply = reply.upcase
-  puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
-  else
-    puts "EHH?? WHAT\'S THAT??"
-    puts "Huh?! I CAN\'T HEAR YOU!"
-  end
+$stdout.flush
+while bye < 1
+    puts "What do you want to say to Grandma?"
+    $stdout.flush
+    tell_grandma = gets.chomp
+    if tell_grandma == "BYE"
+        bye += 1
+    end
+    $stdout.flush
+    if tell_grandma != tell_grandma.upcase
+        puts "HUH!? I CAN\'T HEAR YOU! SPEAK UP, SONNY!"
+    else
+        puts "NO, NOT SINCE " + (1930 + rand(21)).to_s + "!"
+    end
+    $stdout.flush
+end
+while bye == 1
+    puts "BYE BYE, SONNY!"
+    break
+end

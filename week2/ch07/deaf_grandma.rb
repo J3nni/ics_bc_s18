@@ -9,7 +9,7 @@ while (response = gets.chomp) != "BYE"
   else
     puts "NO! NOT SINCE " + (1930 + rand(21)).to_s + "!"
   end
-  if reply == "BYE"
+  if == "BYE"
   end
 end
 puts "PLEASE VISIT ME AGAIN!"

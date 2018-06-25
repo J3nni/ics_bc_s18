@@ -9,6 +9,6 @@ puts (toc[0]).center(page_width)
 # Make a gap
 puts
 # Setting the sections left justified and right justified.
-until t == 3
-  puts (toc[t += 0].ljust(page_width/2) + pg[t += 0].rjust(page_width/2))
+until t == 2
+  puts (toc[t += 1].ljust(page_width/2) + pg[t += 0].rjust(page_width/2))
 end

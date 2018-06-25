@@ -11,6 +11,7 @@ puts (toc[0]).center(page_width)
 puts
 # Setting the sections left justified and right justified.
 until i == 3
-until p == 2
-puts (toc[i += 1].ljust(page_width/2) + pg[p += 0].rjust(page_width/2))
+  until p == 2
+    puts (toc[i += 1].ljust(page_width/2) + pg[p += 0].rjust(page_width/2))
+  end
 end

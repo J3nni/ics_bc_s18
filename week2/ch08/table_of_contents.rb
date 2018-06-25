@@ -7,7 +7,7 @@ toc = [
 page_width = 60
 t = 0
 # Set Title. Its at 0 because arrays start at 0
-puts (toc[0].center(page_width))
+puts (toc[0]).center(page_width)
 # Make a gap
 puts
 # Setting the sections left justified and right justified.

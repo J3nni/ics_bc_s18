@@ -10,7 +10,7 @@ while bye != 1
     puts "HUH!? SPEAK UP, SONNY"
   else
     if respond == respond.upcase
-      year = rand (21) + 1930
+      year = rand(21) + 1930
       puts 'NO, NOT SINCE ' + year.to_s + '!'
     else
       puts 'HUH?! SPEAK UP, SONNY!'

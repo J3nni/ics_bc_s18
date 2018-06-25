@@ -10,7 +10,7 @@ puts (toc[0]).center(page_width)
 puts
 # Setting the sections left justified and right justified.
 i = 0
-while i < array.length
+while i < array
   until i == 2
     puts (ch(array[i].ljust(page_width/2)) + pg(array[i].rjust(page_width/2)))
   end

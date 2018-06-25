@@ -10,3 +10,4 @@ puts
 # Setting the sections left justified and right justified.
 until i == 6
 puts (toc(i += 1).ljust(page_width/2) + toc(i += 1).rjust(page_width/2))
+end

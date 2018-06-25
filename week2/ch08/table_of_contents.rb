@@ -12,5 +12,5 @@ puts (toc[0][0]).center(page_width)
 puts
 # Setting the sections left justified and right justified.
 until i == 3
-puts (toc[i += [1][1]].ljust(page_width/2) + toc[i += [2][1].rjust(page_width/2))
+puts (toc[i += [1][1]].ljust(page_width/2) + toc[i += [2][1]].rjust(page_width/2))
 end

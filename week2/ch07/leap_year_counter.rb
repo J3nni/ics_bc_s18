@@ -1,20 +1,20 @@
-puts 'Begin year:'
+puts "Begin year:"
 $stdout.flush
-beginyear = gets.chomp
-puts 'End year:'
+begin_year = gets.chomp
+puts "End year:"
 $stdout.flush
-endyear = gets.chomp
-puts 'The leap years between ' + beginyear + ' and ' + endyear + ':'
-beginyear = beginyear.to_i
-endyear = endyear.to_i
-if endyear < beginyear
-        puts 'Note: Begin year < End year'
+end_year = gets.chomp
+puts "The leap years between " + begin_year + " and " + end_year + ":"
+begin_year = begin_year.to_i
+end_year = end_year.to_i
+if end_year < begin_year
+  puts 'Note: Begin year < End year'
 else
-        while (beginyear <= endyear)
-                if
-                  (((beginyear %4 == 0) && (beginyear %100 !=0)) || (beginyear %400 == 0))
-       puts beginyear.to_s + " is a leap year"
-     end
-     (beginyear = beginyear.to_i + 1)
-   end
+  while begin_year <= end_year
+    if
+      begin_year %4 == 0 && begin_year %100 !=0 || begin_year %400 == 0
+      puts begin_year.to_s + " is a leap year"
+    end
+    begin_year = begin_year.to_i + 1
+  end
 end

@@ -1,13 +1,13 @@
 puts "Say something nice to Grandma."
 puts
 puts 'Hello Sonny, it has been a while since you last came to visit me. Come here and talk to Grandma.'
-bye == 0
+bye = 0
 while bye != 1
   $stdout.flush
   respond = gets.chomp
   if respond == 'BYE'
     bye = bye + 1
-    puts "HUH!? I CAN\'T HEAR YOU!"
+    puts "HUH!? SPEAK UP, SONNY"
   else
     if respond == respond.upcase
       year = rand (21) + 1930

@@ -12,6 +12,6 @@ puts
 i = 0
 while i < array.length
   until i == 2
-    puts (ch(array[i].ljust(page_width/2) + pg(array[i].rjust(page_width/2))
+    puts (ch(array[i].ljust(page_width/2)) + pg(array[i].rjust(page_width/2)))
   end
 end

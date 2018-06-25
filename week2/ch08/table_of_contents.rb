@@ -12,6 +12,6 @@ puts
 i = 0
 while i < ch.length && pg.length
   until i == 2
-    puts (ch[i += 1].ljust(page_width/2) + pg[i += 1].rjust(page_width/2))
+    puts (ch[each_with_index].ljust(page_width/2) + pg[each_with_index].rjust(page_width/2))
   end
 end

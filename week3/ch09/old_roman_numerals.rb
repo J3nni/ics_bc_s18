@@ -7,7 +7,7 @@ def roman number
   v_length = 0
   i_length = 0
 
-  $stdout.flush
+$stdout.flush
 
   if number >= 1000
     m_length = number/1000

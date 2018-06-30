@@ -1,5 +1,5 @@
 def old_roman_numeral number
-  values =   [1000,500, 100, 50, 10, 5, 1]
+  values =   [1000, 500, 100, 50, 10, 5, 1]
   numerals = ["M", "D", "C", "L", "X", "V", "I"]
   roman_numeral = ""
   i = 0

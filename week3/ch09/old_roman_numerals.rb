@@ -7,6 +7,8 @@ def roman number
   v_length = 0
   i_length = 0
 
+  $stdout.flush
+
   if number >= 1000
     m_length = number/1000
     number = number%1000
@@ -43,6 +45,6 @@ def roman number
   end
 
   puts "M"*m_length + "D"*d_length + "C"*c_length +
-  "L"*l_length + "X"*x_length + "V"*v_length + "I"*i_length 
+  "L"*l_length + "X"*x_length + "V"*v_length + "I"*i_length
 
 end

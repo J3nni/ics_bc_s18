@@ -1,8 +1,4 @@
-$stdout.flush
-puts "Please enter a number you would like to turn
-into an old-school Roman numeral..."
-$stdout.flush
-def roman number
+def old_roman_numeral number
   m_length = 0
   d_length = 0
   c_length = 0
@@ -10,7 +6,6 @@ def roman number
   x_length = 0
   v_length = 0
   i_length = 0
-  $stdout.flush
   if number >= 1000
     m_length = number/1000
     number = number%1000
@@ -42,4 +37,10 @@ def roman number
   puts "M"*m_length + "D"*d_length + "C"*c_length +
   "L"*l_length + "X"*x_length + "V"*v_length + "I"*i_length
 end
+puts "Please enter a number you would like to turn
+into an old-school Roman numeral..."
 $stdout.flush
+reply = gets.chomp
+puts "The number " + reply.to_s + " in
+old-school Roman numberal is:"
+puts old_roman_numeral reply.to_i

@@ -1,3 +1,5 @@
+$stdout.flush
+
 def roman number
   m_length = 0
   d_length = 0
@@ -6,8 +8,6 @@ def roman number
   x_length = 0
   v_length = 0
   i_length = 0
-
-$stdout.flush
 
   if number >= 1000
     m_length = number/1000

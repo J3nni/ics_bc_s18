@@ -1,9 +1,13 @@
 def array_min(array, len)
-  if ______________________
+  if len == 0
     array[0]
   else
-    ______________________
+    if array > len
+      return len
+    else
+      return array
+    end
   end
 end
 
-puts array_min __, __ 
+puts array_min 9, 5

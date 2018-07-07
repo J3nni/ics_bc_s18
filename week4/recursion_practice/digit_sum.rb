@@ -1,9 +1,9 @@
-def digit_sum(num, ___)
-  if ______________________
-    ______________________
+def digit_sum(num)
+  if num == 0
+    return 0
   else
-    ______________________
+    return (num % 10 + digit_sum(num / 10))
   end
 end
 
-puts digit_sum __, __ 
+puts digit_sum 123456789

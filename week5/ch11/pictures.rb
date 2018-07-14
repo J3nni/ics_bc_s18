@@ -3,7 +3,7 @@
 ###
 ### An example for mac could be '/Users/username/Desktop/pic_dst'
 ### An example for PC could be 'C:/Users/username/Desktop/pic_dst'
-Dir.chdir '<destination>'
+Dir.chdir 'C:/Users/User/Pictures/Saved Pictures'
 
 # First we find all of the pictures to be moved.
 ### In the next line you want the source
@@ -12,9 +12,10 @@ Dir.chdir '<destination>'
 ###
 ### An example for mac could be '/Users/username/Desktop/pic_src/**/*.{JPG,jpg}'
 ### An example for PC could be 'C:/Users/username/Desktop/pic_src/**/*.{JPG,jpg}'
-pic_names = Dir['<source>']
+pic_names = Dir['C:/Users/User/Pictures/Saved Pictures/**/*.JPG']
 
 puts 'What would you like to call this batch?'
+$stdout.flush
 batch_name = gets.chomp
 puts
 print "Downloading #{pic_names.length} files: "
